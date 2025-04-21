@@ -3,6 +3,7 @@
 * {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
+  box-sizing: border-box;
 }
 
 header,
@@ -17,8 +18,10 @@ footer {
   font-weight: 900;
 }
 
+p,
+button,
 #hero .secondary-text,
-header .link-text {
+header .link-text a {
   font-size: 0.75rem;
   color: #e5e7eb;
 }
@@ -28,10 +31,7 @@ header .logo-text {
   color: #f9faf8;
 }
 
-button {
-  color: #3882f6;
-}
-
+button,
 .call-to-action {
   background: #3882f6;
 }
@@ -50,4 +50,125 @@ button {
   font-size: 1.5rem;
   font-style: italic;
   color: #1f2937;
+}
+
+/* My styles */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15%;
+}
+
+header .link-text a {
+  text-decoration: none;
+}
+
+main#hero .main-text {
+  margin: 0;
+}
+
+main#hero .secondary-text {
+  margin: 8px 0;
+}
+
+main#hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 128px 15%;
+}
+
+main#hero .content-wrapper {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main#hero .link-text {
+  width: fit-content;
+}
+
+main#hero .image-wrapper {
+  background: #808080;
+  aspect-ratio: 5/2;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+main#hero .image-wrapper > p {
+  width: 100%;
+  text-align: center;
+}
+
+main#hero .link-text {
+  border-radius: 8px;
+  border: none;
+  padding: 6px 24px;
+}
+
+section.information {
+  margin: 64px 20%;
+}
+section.information .header-text {
+  text-align: center;
+}
+
+section.information .info-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-list .info-wrapper {
+  margin: 8px;
+  width: 170px;
+  text-align: center;
+}
+
+.info-list > .info-wrapper > .image-wrapper {
+  border: 6px solid #3882f6;
+  height: 170px;
+  border-radius: 16px;
+}
+
+section.quote {
+  padding: 64px 20%;
+}
+
+.quote-text {
+  margin: 0;
+}
+
+.author-text {
+  font-size: 1rem;
+  font-weight: bold;
+  color: inherit;
+  text-align: right;
+  margin: 0;
+}
+
+section.call-to-action {
+  margin: 64px 15%;
+  border-radius: 16px;
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.call-to-action .content-wrapper > * {
+  color: white;
+  margin: 0;
+}
+
+.call-to-action .button-wrapper > button {
+  padding: 3px 16px;
+  border: 3px solid white;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 32px 0;
 }
