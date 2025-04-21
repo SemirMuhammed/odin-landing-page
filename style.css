@@ -1,0 +1,52 @@
+/* Project Default Styling */
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+}
+
+#hero,
+footer {
+  background: #1f2937;
+}
+
+#hero .main-text {
+  font-size: 2rem;
+  color: #f9faf8;
+  font-weight: 900;
+}
+
+#hero .secondary-text,
+header .link-text {
+  font-size: 0.75rem;
+  color: #e5e7eb;
+}
+
+header .logo-text {
+  font-size: 1rem;
+  color: #f9faf8;
+}
+
+button {
+  color: #3882f6;
+}
+
+.call-to-action {
+  background: #3882f6;
+}
+
+.information .header-text {
+  font-size: 1.5rem;
+  color: #1f2937;
+  font-weight: 900;
+}
+
+.quote {
+  background: #e5e7eb;
+}
+
+.quote .quote-text {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #1f2937;
+}
