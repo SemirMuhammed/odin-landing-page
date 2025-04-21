@@ -21,6 +21,7 @@ footer {
 p,
 button,
 #hero .secondary-text,
+footer,
 header .link-text a {
   font-size: 0.75rem;
   color: #e5e7eb;
@@ -171,4 +172,14 @@ section.call-to-action {
 footer {
   text-align: center;
   padding: 32px 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.info-list > .info-wrapper > .sub-text {
+  color: #1f2937;
 }
